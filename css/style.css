@@ -99,7 +99,7 @@
 }
 
 .imgFlex img {
-    width: 380px;
+    max-width: 380px;
     padding-top: 1%;
     margin: auto;
 }

@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    color: #4f4f4f;
+    box-sizing: border-box;
+}
+
+/* HEAD ------------------------------------------------------------------------ */
+
+.head {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "menu login";
+    background:  url(../img/tajMahal_fundo.svg) center no-repeat;
+    background-size:cover;
+}
+
+/* .menu {grid-area: menu;} */
+.login {grid-area: login;}
+
+.fontLogin {
+    float: right;
+    margin: 5%;
+    cursor: pointer;
+    color: white;
+}
+
+.fontLogin:hover {
+    color: #BB9C57;
+}
+
+.popLogin {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 230px;
+    height: 230px;
+    background-color: white;
+}
+
+.formLogin {
+    margin-top: 20px;
+}
+
+.btnLogin {
+    margin-left: 16px;
+    background-color: #BB9C57;
+    color: white;
+}
+
+.btnLogin:hover {
+    background-color: #D3B167;
+}
+
+/* FLEX ----------------------------------------------------------------------- */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+}
+
+.textFlex {flex: 1;}
+.imgFlex {flex: 1;}
+
+.flex H2 {
+    padding-top: 10%;
+    padding-left: 60px;
+    font-size: 64px;
+    font-weight: 900;
+    color: #D3B167;
+}
+
+.flex H2::after {
+    content: '';
+    width:  390px;
+    height: 10px;
+    background: #D3B167;
+    display: block;
+    position: relative;
+    margin: -15px -80px;
+}
+
+.tituloFlex {
+    margin-top: 40px;
+    padding-left: 65px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.textFlexGeral{
+    margin-top: 20px;
+    padding-left: 65px;
+    font-size: 1rem;
+    font-weight:300;
+}
+
+.imgFlex img {
+    width: 380px;
+    padding-top: 1%;
+    margin: auto;
+}
+
+#elefante {
+    padding-top: 15%;
+    padding-left: 80px;
+}
+
+@media (min-width:1300px) {
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .flex H2 {
+        padding-top: 20%;
+        padding-left: 60px;
+        font-size: 64px;
+        font-weight: 900;
+        color: #D3B167;
+    }
+
+    .tituloFlex {
+        margin-top: 60px;
+        padding-left: 65px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .textFlexGeral{
+        margin-top: 20px;
+        padding-left: 65px;
+        font-size: 1rem;
+        font-weight:300;
+    }
+
+    .imgFlex img {
+        width: 800px;
+        padding-top: 10%;
+    }
+}
+
+/* SLIDE ----------------------------------------------------------------------- */
+
+.slide img {
+	display: block;
+	padding-top: 60px;
+	max-width: 65%;
+    height: 100vh;
+}
+
+.slide {
+	position: relative;
+	overflow: hidden;
+}
+
+.slide > * {
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	transition: 1s;
+}
+
+.slide > .active {
+	position: relative;
+	opacity: 1;
+}
+
+.SuitePrincipal {
+    font-size: 48px;
+    font-weight: 900;
+    color: #D3B167;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -12em;
+    margin-right: 20px;
+    margin-bottom: 13em;
+    line-height: 0;
+}
+
+.SuitePrincipal::after {
+    content: '';
+    width:  380px;
+    height: 10px;
+    background: #D3B167;
+    display: block;
+    right: 0;
+    position: absolute;
+    margin: 17px 0px;
+}
+
+.tituloFirst {
+	font-size: 1.2rem;
+    font-weight: 900;
+	float: right;
+    text-align: right;
+	margin-top: -28em;
+    margin-right: 22px;
+}
+
+
+.textFirst {
+    width: 400px;
+	font-size: 16px;
+    font-weight: 300;
+	float: right;
+    text-align: right;
+	margin-top: -31em;
+    margin-right: 22px;
+}
+
+.tituloPreco {
+	font-size: 1.2rem;
+    font-weight: 900;
+	float: right;
+    text-align: right;
+	margin-top: -19em;
+    margin-right: 22px;
+}
+
+
+.textPreco {
+    width: 400px;
+	font-size: 16px;
+    font-weight: 300;
+	float: right;
+    text-align: right;
+	margin-top: -20em;
+    margin-right: 22px;
+    margin-bottom: 5em;
+}
+
+.textPreco2 {
+    width: 400px;
+	font-size: 16px;
+    font-weight: 300;
+	float: right;
+    text-align: right;
+	margin-top: -18em;
+    margin-right: 22px;
+    margin-bottom: 5em;
+}
+
+.textPreco3 {
+    width: 400px;
+	font-size: 16px;
+    font-weight: 300;
+	float: right;
+    text-align: right;
+	margin-top: -16em;
+    margin-right: 22px;
+    margin-bottom: 5em;
+}
+
+.btnSuite {
+    background-color: #D3B167;
+    color: white;
+    float: right;
+    font-weight: 600;
+    text-align: right;
+    padding: 20px 60px;
+	margin-top: -10em;
+    margin-right: 22px;
+    margin-bottom: 5em;
+    border-radius: 8px;
+    border: none;
+}
+
+.btnSuite:hover {
+    background-color: #BB9C57;
+}
+
+@media (max-width:1380px) {
+
+    .slide img {
+        display: block;
+        padding-top: 100px;
+        padding-left: 60px;
+        max-width: 65%;
+        height: 100vh;
+    }
+
+    .SuitePrincipal {
+        font-size: 48px;
+        font-weight: 900;
+        color: #D3B167;
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: -10em;
+        margin-right: 20px;
+        margin-bottom: 13em;
+        line-height: 0;
+    }
+
+    .tituloFirst {
+        font-size: 1.2rem;
+        font-weight: 900;
+        float: right;
+        text-align: right;
+        margin-top: -28em;
+        margin-right: 22px;
+    }
+    
+    
+    .textFirst {
+        width: 400px;
+        font-size: 16px;
+        font-weight: 300;
+        float: right;
+        text-align: right;
+        margin-top: -31em;
+        margin-right: 22px;
+    }
+    
+    .tituloPreco {
+        font-size: 1.2rem;
+        font-weight: 900;
+        float: right;
+        text-align: right;
+        margin-top: -20em;
+        margin-right: 22px;
+    }
+    
+    
+    .textPreco {
+        width: 400px;
+        font-size: 16px;
+        font-weight: 300;
+        float: right;
+        text-align: right;
+        margin-top: -21em;
+        margin-right: 22px;
+        margin-bottom: 5em;
+    }
+    
+    .textPreco2 {
+        width: 400px;
+        font-size: 16px;
+        font-weight: 300;
+        float: right;
+        text-align: right;
+        margin-top: -19em;
+        margin-right: 22px;
+        margin-bottom: 5em;
+    }
+    
+    .textPreco3 {
+        width: 400px;
+        font-size: 16px;
+        font-weight: 300;
+        float: right;
+        text-align: right;
+        margin-top: -17em;
+        margin-right: 22px;
+        margin-bottom: 5em;
+    }
+    
+    .btnSuite {
+        background-color: #D3B167;
+        color: white;
+        float: right;
+        font-weight: 600;
+        text-align: right;
+        padding: 20px 60px;
+        margin-top: -14em;
+        margin-right: 22px;
+        margin-bottom: 5em;
+        border-radius: 8px;
+        border: none;
+    }
+    
+ 
+}
+
+/* FOOTER ----------------------------------------------------------------------- */
+
+.footer {
+    width: 100%;
+    height: 715px;
+    display: grid;
+    grid-template-areas: "upHead sociais logo";
+    background: url(../img/holiday2.jpg) center no-repeat;
+    background-size: 100% 100%;
+}
+
+.upHead {grid-area: upHead;}
+.sociais{grid-area: sociais;}
+.logo {grid-area: logo;}
+
+/* Form ------------------------------------------------------------------------ */
+
+.display {
+    display: none;
+}
+
+.containerSuite {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    margin: 0 auto;
+}
+
+.imgLogo {
+    margin-bottom: 40px;
+}
+
+.btnSuiteReservar {
+    background-color: #D3B167;
+    color: white;
+    font-weight: 600;
+    text-align: right;
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.btnVoltar {
+    float: right;
+    margin-top: -4%;
+    margin-right: 180px;
+}
+
+.form-change {
+    margin: 0 auto;
+    padding-left: 15%;
+}
+
+.suite {
+    margin-top: 2.4%;
+}
+
+.clienteheader {
+    justify-content: center;
+    display: flex;
+}
+
+.imgLogoCliente {
+    margin: 40px;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #555;
+    height: 80px;
+}
+
+.navegacao > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.navegacao > a.vermelho {background-color: #f44336;}
+
+.usuario {
+    flex-grow: 1;
+    justify-self: flex-start;
+    color: #eee;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}

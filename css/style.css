@@ -141,7 +141,7 @@
     }
 
     .imgFlex img {
-        width: 800px;
+        max-width: 800px;
         padding-top: 10%;
     }
 }

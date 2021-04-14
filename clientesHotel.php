@@ -40,8 +40,10 @@ if(!$_SESSION['usuario']){
 
 
     $sql = "SELECT id,nome,cpf,nascimento,email,filhos,pessoas,dataInicial,dataFinal,celular,
-            quartos,suite FROM cadastro";
+        quartos,suite FROM cadastro";
 
+    $conexao = novaConexao();
+    
     $resultado = $conexao->query($sql);
 
     $registros = [];

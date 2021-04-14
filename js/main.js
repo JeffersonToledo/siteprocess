@@ -28,11 +28,11 @@ slider('slide', 4000);
 
 /* Login --------------------------------------------------------------------------- */
 
-$(document).ready(function() {
-    $('.fontLogin').click(function() {
-      $('.popLogin').toggleClass("display");
+$(document).ready(function () {
+    $('.fontLogin').click(function () {
+        $('.popLogin').toggleClass("display");
     });
-  });
+});
 
 /* Suítes Reservas ----------------------------------------------------------------- */
 
@@ -67,21 +67,39 @@ $('.btnSoundVoltar').click(function () {
 });
 
 
+/* Modo App ------------------------------------------------------------------------------------------------------------ */
 
+$('.btnPalace2').click(function () {
+    $('.modoApp').addClass('display');
+    $('.form-palaceApp').removeClass('display');
+});
 
-// var nome = document.querySelector('#nome');
-// var email = document.querySelector('#email');
+$('.btnPalaceVoltar2').click(function () {
+    $('.modoApp').removeClass('display');
+    $('.form-palaceApp').addClass('display');
+});
 
-// function handleKeyUp(event) {
-//     email = event.target.value;
-//     if(email !== null) {
-//         $('#btnSound').prop('disabled', false);
-//     }
-// }
+$('.btnDream2').click(function () {
+    $('.modoApp').addClass('display');
+    $('.form-dreamApp').removeClass('display');
+});
 
-// email.addEventListener('keyup', handleKeyUp);
+$('.btnDreamVoltar2').click(function () {
+    $('.modoApp').removeClass('display');
+    $('.form-dreamApp').addClass('display');
+});
 
+$('.btnSound2').click(function () {
+    $('.modoApp').addClass('display');
+    $('.form-soundApp').removeClass('display');
+});
 
+$('.btnSoundVoltar2').click(function () {
+    $('.modoApp').removeClass('display');
+    $('.form-soundApp').addClass('display');
+});
+
+/* Fim do modo App ---------------------------------------------------------------------------------------------------------- */
 
 $(document).ready(function () {
 

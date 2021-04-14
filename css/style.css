@@ -54,6 +54,12 @@
     background-color: #D3B167;
 }
 
+@media (max-width:780px) {
+    .head {
+        background:  url(../img/tajMahalApp.jpg) center no-repeat;
+    }
+}
+
 /* FLEX ----------------------------------------------------------------------- */
 
 .flex {
@@ -142,7 +148,7 @@
 
     .imgFlex img {
         max-width: 800px;
-        padding-top: 10%;
+        margin-top: 10%;
     }
 }
 
@@ -380,6 +386,60 @@
  
 }
 
+.modoApp {
+    display: none;
+}
+
+@media (max-width:780px) {
+    .slide {
+        display: none;
+    }
+    .modoApp {
+        display: contents;
+        width: 100%;
+        height: auto;
+        grid-template-areas: 
+            "tituloApp"
+            "imgApp"
+            "textoApp";
+    
+        justify-items: center;
+        text-align: center;
+    }
+    
+    .tituloApp {grid-area: tituloApp;}
+    .imgApp {grid-area: imgApp;}
+    .textoApp {grid-area: textoApp;}
+    
+    .tituloApp {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #D3B167;
+        margin: 40px auto;
+    }
+    
+    .imgApp img {
+        width: 100%;
+    }
+    
+    .textoApp, .tituloFirst2 {
+        margin: 20px auto;
+        font-weight: 400;
+        color: #D3B167;
+    }
+    
+    .btnSuite2 {
+        background-color: #D3B167;
+        color: white;
+        font-weight: 600;
+        padding: 15px 60px;
+        border-radius: 8px;
+        border: none;
+        margin-top: 20px;
+    }
+    
+}
+
 /* FOOTER ----------------------------------------------------------------------- */
 
 .footer {
@@ -433,6 +493,11 @@
     float: right;
     margin-top: -4%;
     margin-right: 180px;
+}
+
+.btnVoltar2 {
+    float: right;
+    margin-top: -15%;
 }
 
 .form-change {

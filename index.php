@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/512b1b950e.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Hotel Mahal</title>
+    <title>O Hotel Mahal</title>
 </head>
 
 <body>

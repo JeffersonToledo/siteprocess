@@ -22,7 +22,7 @@ if($login === '' || $login === null || $login != $array[0] ||
         alert('Login e/ou senha incorretos');window.location.href='index.php';</script>";
 }else{
 
-    if($login == $array[0] || $senha == $arraySenha[0] ){
+    if($login == $array[0] && $senha == $arraySenha[0] ){
 
 
         session_start();
